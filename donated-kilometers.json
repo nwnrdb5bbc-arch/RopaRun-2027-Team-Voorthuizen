@@ -1,4 +1,26 @@
 {
-  "uitleg": "Pas alleen de lijst gedoneerd aan. De route en GPS-locaties staan in index.html en veranderen hierdoor niet.",
-  "gedoneerd": [100, 200, 300, 400, 500]
+  "uitleg": "Pas de lijst gedoneerd aan voor de rode kilometerpunten. Vul bij een gedoneerde kilometer de naam en boodschap in bij donateurs, met het kilometernummer als sleutel. Laat deze velden leeg als de donateur anoniem wil blijven of geen boodschap heeft.",
+  "gedoneerd": [100, 200, 300, 400, 500],
+  "donateurs": {
+    "100": {
+      "naam": "",
+      "boodschap": ""
+    },
+    "200": {
+      "naam": "",
+      "boodschap": ""
+    },
+    "300": {
+      "naam": "",
+      "boodschap": ""
+    },
+    "400": {
+      "naam": "",
+      "boodschap": ""
+    },
+    "500": {
+      "naam": "",
+      "boodschap": ""
+    }
+  }
 }

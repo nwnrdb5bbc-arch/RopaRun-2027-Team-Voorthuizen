@@ -2,7 +2,7 @@ INTERACTIEVE SPONSORKAART - ROPARUN 2027 - v2.2
 
 INHOUD
 - index.html: interactieve kaart met 558 vaste routepunten en kilometerzoekfunctie.
-- donated-kilometers.json: bepaalt alleen welke kilometerbolletjes rood zijn.
+- donated-kilometers.json: bepaalt welke kilometerbolletjes rood zijn en bevat donateurgegevens.
 - README.txt: deze uitleg.
 
 OPGELOST IN v2.2
@@ -15,20 +15,34 @@ OPGELOST IN v2.2
 - Mobiele weergave en kilometerzoekfunctie zijn behouden en verbeterd.
 
 PUBLICEREN OP GITHUB PAGES
-1. Verwijder of vervang de bestaande index.html in de GitHub-repository.
-2. Upload de index.html uit dit pakket.
-3. Plaats donated-kilometers.json in exact dezelfde map als index.html.
-4. Laat de bestandsnamen ongewijzigd.
-5. Wacht na uploaden doorgaans 1 tot 3 minuten op GitHub Pages.
-6. Vernieuw daarna met Ctrl+F5 op Windows of wis de browsercache op mobiel.
+1. Plaats donated-kilometers.json in exact dezelfde map als index.html.
+2. Laat de bestandsnamen ongewijzigd.
+3. Wacht na een wijziging doorgaans 1 tot 3 minuten op GitHub Pages.
+4. Vernieuw daarna met Ctrl+F5 op Windows of wis de browsercache op mobiel.
 
-DONATIESTATUS AANPASSEN
-Pas alleen de lijst "gedoneerd" in donated-kilometers.json aan, bijvoorbeeld:
+DONATIESTATUS EN DONATEURGEGEVENS AANPASSEN
+- Voeg het kilometernummer toe aan de lijst "gedoneerd" om het punt rood te maken.
+- Vul voor die kilometer ook "naam" en/of "boodschap" in bij "donateurs".
+- Gebruik het kilometernummer als tekstsleutel in "donateurs".
+- Laat "naam" leeg als de donateur anoniem wil blijven; laat "boodschap" leeg als er geen boodschap is.
+
+Voorbeeld:
 {
-  "uitleg": "Pas alleen de lijst gedoneerd aan. De route en GPS-locaties staan in index.html en veranderen hierdoor niet.",
-  "gedoneerd": [12, 45, 103]
+  "uitleg": "Pas gedoneerd en donateurs aan.",
+  "gedoneerd": [12, 45],
+  "donateurs": {
+    "12": {
+      "naam": "Voorbeeldnaam",
+      "boodschap": "Succes met de RopaRun, team Voorthuizen!"
+    },
+    "45": {
+      "naam": "",
+      "boodschap": "Veel succes!"
+    }
+  }
 }
 
+Let op: de huidige kaart gebruikt "gedoneerd" om de punten rood te kleuren. De naam en boodschap staan nu in het JSON-bestand; om ze ook in de popup op de kaart te tonen, moet index.html hiervoor nog worden aangepast.
 Groen = beschikbaar.
 Rood = gedoneerd.
 De route en GPS-locaties blijven ongewijzigd.
