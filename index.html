@@ -36,7 +36,7 @@ requestAnimationFrame(()=>requestAnimationFrame(fitWholeRoute));
 window.addEventListener('load',()=>setTimeout(fitWholeRoute,250));
 window.addEventListener('resize',()=>{clearTimeout(window._mapResizeTimer);window._mapResizeTimer=setTimeout(()=>map.invalidateSize({pan:false}),150);});
 const layer=L.layerGroup().addTo(map);
-function updateCounter(){document.getElementById('counter').textContent=`${POINTS.length-donated.size} beschikbaar | ${donated.size} gedoneerd`;}
+function updateCounter(){document.getElementById('counter').textContent=`${POINTS.length-donated.size} beschikbaar | ${donated.size} gedoneerd`};
 function sponsor(km){
   const text=`Kilometer ${km}`;
   if(navigator.clipboard){navigator.clipboard.writeText(text).catch(()=>{});}
