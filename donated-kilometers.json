@@ -1,4 +1,4 @@
 {
   "uitleg": "Pas alleen de lijst gedoneerd aan. De route en GPS-locaties staan in index.html en veranderen hierdoor niet.",
-  "gedoneerd": [500]
+  "gedoneerd": [100, 200, 300, 400, 500]
 }
