@@ -1,7 +1,5 @@
 {
   "uitleg": "Vul per gedoneerde kilometer km, naam en boodschap in. Route en GPS blijven ongewijzigd.",
-  "donaties": []
-    {"km": 12, "naam": "Voorbeeld donateur", "boodschap": "Heel veel succes Team Voorthuizen!"},
-    {"km": 45, "naam": "Familie De Vries", "boodschap": "Zet hem op!"}
+  "donaties": ["km": 12, "naam": "Voorbeeld donateur", "boodschap": "Heel veel succes Team Voorthuizen!"]
   ]
 }
