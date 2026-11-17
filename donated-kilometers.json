@@ -1,30 +1,7 @@
 {
   "uitleg": "Vul per gedoneerde kilometer km, naam en boodschap in. Route en GPS blijven ongewijzigd.",
   "donaties": []
-{
-      "km": 100,
-      "naam": "Persoon 1",
-      "boodschap": "Zet hem op!"
-    },
-    {
-      "km": 200,
-      "naam": "Persoon 2",
-      "boodschap": "Zet hem op!"
-    },
-    {
-      "km": 300,
-      "naam": "Persoon 3",
-      "boodschap": "Zet hem op!"
-    },
-    {
-      "km": 400,
-      "naam": "Persoon 4",
-      "boodschap": "Zet hem op!"
-    },
-    {
-      "km": 500,
-      "naam": "Persoon 5",
-      "boodschap": "Zet hem op!"
-    }
+    {"km": 12, "naam": "Voorbeeld donateur", "boodschap": "Heel veel succes Team Voorthuizen!"},
+    {"km": 45, "naam": "Familie De Vries", "boodschap": "Zet hem op!"}
   ]
 }
