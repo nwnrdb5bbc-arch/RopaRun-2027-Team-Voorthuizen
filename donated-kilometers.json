@@ -1,4 +1,4 @@
 {
   "uitleg": "Vul per gedoneerde kilometer km, naam en boodschap in. Route en GPS blijven ongewijzigd.",
-  "donaties": [100, 200, 300, 400, 500]
+  "gedoneerd": [100, 200, 300, 400, 500]
 }
